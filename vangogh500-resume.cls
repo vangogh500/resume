@@ -19,19 +19,35 @@
 \ProvidesClass {vangogh500-resume}[2014/4/25 Vangogh's resume document class]
 \LoadClass [letterpaper]{article} %uses the letter paper ver. of the article class
 
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor} %package for colors
+\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} %package for setting margins
+\usepackage{hyperref}
 
 % ------------------------------------------------------------%
 % Colors                                                              %
 %-------------------------------------------------------------%
-\definecolor{primary}{HTML}{F200FF}
-\definecolor{headings}{HTML}{F200FF}
+
+% define colors
+\definecolor{primary}{HTML}{000000}
+\definecolor{secondary}{HTML}{7F7F7F}
 
 % ------------------------------------------------------------%
-% Commands                                                      %
+% Environments                                                  %
 %-------------------------------------------------------------%
-\newcommand{\name}[3] {
-	\centering {
-		\fontsize{40pt}{60pt}
+
+\newenvironment{namesection}[2] %namesection
+	{ 
+	\begin {center}
+		{ % title for section
+		\fontsize {100pt}{100pt}
+		\color{secondary} \selectfont \textbf {#1} 
+		\color {primary} \selectfont \textbf {#2} 
+		}
+	\\[5pt]
+	\fontsize {11pt} {14pt}
+	\selectfont
 	}
-}
+	{  \end {center}
+	}
+	
+	
