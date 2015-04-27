@@ -26,15 +26,15 @@
 
 
 % ------------------------------------------------------------%
-% Colors                                                             %
+% Colors                                                      %
 %-------------------------------------------------------------%
 
 % define colors
 \definecolor{primary}{HTML}{000000}
-\definecolor{secondary}{HTML}{7F7F7F}
+\definecolor{secondary}{HTML}{767676}
 
 % ------------------------------------------------------------%
-% Environments & Commands                           %
+% Environments & Commands                                     %
 %-------------------------------------------------------------%
 
 % namesection
