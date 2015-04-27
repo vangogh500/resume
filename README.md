@@ -13,6 +13,10 @@ The goal of this project is to learn/practice the LaTeX markup language via crea
 [vangogh500-resume/sample-resume.tex]: sample LaTeX code using vangogh500-resume.cls
 [sample-resume.pdf]: pdf of the sample resume
 
+[vangogh500-resume/vangogh500-resume.cls]: vangogh500-resume/vangogh500-resume.cls
+[vangogh500-resume/sample-resume.tex]: vangogh500-resume/sample-resume.tex
+[sample-resume.pdf]: sample-resume.pdf
+
 ##Preview
 ![Alt text](sample-resume.pdf)
 
