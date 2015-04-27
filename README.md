@@ -14,9 +14,15 @@ The goal of this project is to learn/practice the LaTeX markup language via crea
 [sample-resume.pdf]: pdf of the sample resume
 
 ##Preview
-![alt tag](https://raw.githubusercontent.com/vangogh500/resume/master/sample-resume.pdf)
+![Alt text](sample-resume.pdf)
 
-##Using vangogh500-resume.cls
+##Acknowledgements/References
+The following online tutorials/guides were used:
+[Latex-Tutorial.com](http://www.latex-tutorial.com/)
+[TeX Users Group Tutorial](https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf)
+[Wikibooks](http://en.wikibooks.org/wiki/LaTeX)
 
+##License
+The code is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 
