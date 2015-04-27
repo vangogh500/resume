@@ -1,7 +1,7 @@
-# Resume in LaTeX
+# Vangogh500-Resume in LaTeX
 
 ##Overview
-The goal of this project is to learn/practice the LaTeX markup language via creating my resume.
+Vangogh500-resume is a way to format your resume utilizing the LaTeX markup language.
 
 ##Version
 
