@@ -22,6 +22,9 @@
 \usepackage[usenames,dvipsnames]{xcolor} %package for colors
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} %package for setting margins
 \usepackage{hyperref}
+\usepackage{CJKutf8}
+
+
 
 % ------------------------------------------------------------%
 % Colors                                                              %
@@ -34,20 +37,55 @@
 % ------------------------------------------------------------%
 % Environments                                                  %
 %-------------------------------------------------------------%
-
 \newenvironment{namesection}[2] %namesection
 	{ 
 	\begin {center}
 		{ % title for section
-		\fontsize {100pt}{100pt}
+		\fontsize {50pt}{60pt}
 		\color{secondary} \selectfont \textbf {#1} 
 		\color {primary} \selectfont \textbf {#2} 
 		}
 	\\[5pt]
-	\fontsize {11pt} {14pt}
-	\selectfont
+	% settings for within the section
+	\fontsize {11pt} {14pt} \selectfont
 	}
 	{  \end {center}
 	}
-	
+
+\newenvironment{education}
+	{
+		{ %for title section
+		\fontsize {16pt} {24pt}
+		\color{secondary}
+		\selectfont
+		Education
+		\hrulefill
+		}
+		%body
+		\\[5pt]
+	} 
+	{
+	}
+\newenvironment{school}[2] 
+	{	
+		{ %for title of school
+		\fontsize {12pt} {12pt}
+		\color {primary} \selectfont \textbf {#1} 
+		}
+		\\
+		{ %for major/field
+		\fontsize {10pt} {12pt}
+		\selectfont {#2} 
+		}
+		%body
+		\fontsize {10pt} {11pt}
+		\color {secondary} \selectfont
+		\noindent
+		\\
+	}
+	{
+	}
+
+
+
 	
