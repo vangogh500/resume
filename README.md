@@ -3,9 +3,11 @@
 ##Overview
 Vangogh500-resume is a way to format your resume utilizing the LaTeX markup language.
 
-##Version
+##Change Log
 
-1.0
+v1.1 
+* Added category section and societies section
+* Created an environment within the class file for tight bullet points
 
 
 ##Provided
