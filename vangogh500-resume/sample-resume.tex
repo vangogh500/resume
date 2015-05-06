@@ -13,21 +13,27 @@
 
 \documentclass {vangogh500-resume}
 \usepackage{CJKutf8} %needed for foreign language
+\usepackage{hyperref} %needed for links
 
 \begin {document}
 
 %--------------------------------------------------------------------%
-% Name Section                                                       %
+% Title Section                                                      %
 %--------------------------------------------------------------------%
+% begins name section
 \begin{namesection} {Kai} {Matsuda}
 	\begin{CJK}{UTF8}{min}
 	松田　鹿飛 \\
 	\end{CJK}
 	973 E. Pleasant St. Amherst, MA \\ 
-	\vspace{-3pt}
 	\href{mailto:kmatsuda@umass.edu}{kmatsuda@umass.edu} $|$ 413.369.8043
 \end {namesection}
 
+\noindent
+% begins objective section
+\begin {objectivesection}
+	A summer position, part-time job, or internship related to my field of specialization | economics and computer science | that will allow for both professional experience and personnel growth.
+\end {objectivesection}
 %--------------------------------------------------------------------%
 % Left Column                                                        %
 %--------------------------------------------------------------------%
@@ -46,8 +52,8 @@
 		\end{school}
 		\\[15pt]
 		\begin {newsubcategory} {Japanese Language School}
-			1995 - 2008 $|$ South Hadley, MA
-			Saturday Japanese immersion.
+			1995 - 2008 $|$ South Hadley, MA \\
+			Saturday classes in Japanese.
 		\end {newsubcategory}
 	\end {newcategory}
 	\\[15pt]
@@ -59,7 +65,7 @@
 		\end {newsubcategory}
 		\\[15pt]
 		\begin {newsubcategory} {Bilingual}
-			Fluent in Japanese.
+			Fluent in both Japanese \& English.
 		\end {newsubcategory}
 	\end {newcategory}
 	\\[15pt]
@@ -75,6 +81,9 @@
 	\end {newcategory}
 	\\[15pt]
 \end {minipage}%
+%--------------------------------------------------------------------%
+% Space between columns                                              %
+%--------------------------------------------------------------------%
 \begin{minipage}[t]{0.02\textwidth}
 \hfill
 \end {minipage}%
@@ -85,46 +94,62 @@
 	% Begins Employment category
 	\begin {newcategory} {Employement}
 		\begin {job} {Milestaff Publishing Co.} {Translator \& Correspondent}
-			May 2014 - Aug 2014 $|$ Shizuoka, Japan
-			\vspace{-\topsep}
-			\begin{itemize}
-				\itemsep1pt \parskip0pt \parsep0pt
+			May 2014 - Aug 2014 $|$ Shizuoka, Japa
+			\begin{tightbullets}
 				\item Translated books and passages from Japanese to English
 				\item Corresponded with publishers and distributors in English speaking countries
-			\end{itemize}
+			\end{tightbullets}
+		\end {job}
+		\begin {job} {Freelance Jazz Musician} {Saxophonist}
+			Sep 2011 - Sep 2014 $|$ New York, NY
+			\begin{tightbullets}
+				\item Played in various venues in NYC such as Somethin' Jazz Club, Tutuma Social Club, \& Washington Square Park.
+			\end{tightbullets}
 		\end {job}
 		\begin {job} {America Reads} {Tutor}
 			Sep 2011 - Dec 2011 $|$ New York, NY
-			\vspace{-\topsep}
-			\begin{itemize}
-				\itemsep1pt \parskip0pt \parsep0pt
+			\begin{tightbullets}
 				\item Worked with New York City public schools in order to aid students and teachers in the classroom
 				\item Taught prepared curriculum individually to a class of 20 students
-			\end{itemize}
-			\vspace{15pt}
+			\end{tightbullets}
 		\end {job}
+	\vspace{10pt}
 	\end {newcategory}
 	% Begins Activities category
-	\begin {newcategory} {Activities}
+	\begin {newcategory} {Activities \& Projects}
 		\begin{job} {Student Government} {Director of Communications}
 			Sep 2012 - Dec 2012 $|$ New York, NY
-			\vspace{-\topsep}
-			\begin{itemize}
-				\itemsep1pt \parskip0pt \parsep0pt
+			\begin{tightbullets}
 				\item Part of the Palladium Unified Government (PUG), an elected board that programs events for residents of the dorm
 				\item Launched the Facebook mascot, ``Pugsly da Pug'' to promote events
 				\item Launched an email address for the board, so that students could reach out to the board directly via email
-			\end{itemize}
+			\end{tightbullets}
 		\end {job}
-		\begin{job} {The Revisionists} {Founder}
-			Sep 2012 - Present
-			\vspace{-\topsep}
-			\begin{itemize}
-				\itemsep1pt \parskip0pt \parsep0pt
+		\begin{job} {Github} {Software Developer}
+			April 2015 - Present $|$ \href{https://github.com/vangogh500} {github.com/vangogh500}
+			\begin{tightbullets}
+				\item Vangogh500-Resume: Source code for formatting resumes in LaTeX
+				\item VJC15: Scientific/graphing calculator using mainly Java \& Scala
+			\end{tightbullets}
+		\end{job}
+		\begin{job} {SoundCloud} {Music Composer}
+			Sep 2012 - Present $|$ \href{https://soundcloud.com/kaismatsuda} {soundcloud.com/kaismatsuda}
+			\begin{tightbullets}
+				\item 42 followers, 20 tracks, and over a 1000 plays
+			\end{tightbullets}
+		\end{job}
+		\begin{job} {The Revisionists} {Founder/Writer}
+			Sep 2012 - Present $|$ \href{https://therevisionists.wordpress.com} {therevisionists.wordpress.com}
+			\begin{tightbullets}
 				\item Blog on social and political critique
 				\item 17 followers and 225 visitors since 2015
-			\end{itemize}
+			\end{tightbullets}
 		\end {job}
+	\end {newcategory}
+	\vspace{10pt}
+	% begins societies category
+	\begin {newcategory} {Societies}
+		2014 $|$ top 15\%ile | Golden Key Intern. Honors Society
 	\end {newcategory}
 \end {minipage}
 \end {document}
