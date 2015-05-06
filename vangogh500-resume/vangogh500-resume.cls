@@ -26,7 +26,7 @@
 
 
 % ------------------------------------------------------------%
-% Colors                                                      %
+% Colors                                                             %
 %-------------------------------------------------------------%
 
 % define colors
@@ -34,10 +34,10 @@
 \definecolor{secondary}{HTML}{767676}
 
 % ------------------------------------------------------------%
-% Environments & Commands                                     %
+% Environments & Commands                           %
 %-------------------------------------------------------------%
 
-% namesection
+% name section
 % @param first name, last name
 \newenvironment{namesection}[2] 
 	{ 
@@ -52,6 +52,19 @@
 	\fontsize {11pt} {14pt} \selectfont
 	}
 	{  \end {center}}
+
+% objective section
+\newenvironment{objectivesection} 
+	{
+		\rule{\textwidth}{1pt}
+		\itshape
+		\textbf {Objective: }
+	}
+	{	\itshape \\
+		\rule{\textwidth}{1pt}
+		\\[10pt]
+	}
+
 
 % general category
 % @param name of category
@@ -105,6 +118,18 @@
 	\color {secondary} \selectfont
 	\\
 }{}
+
+\newenvironment{tightbullets} {
+	\vspace{-\topsep}
+	\begin{itemize}
+	\itemsep1pt \parskip0pt \parsep0pt
+} { \end{itemize} }
+
+\newenvironment{subtext} {
+	\fontsize {10pt} {11pt}
+	\color {secondary} \selectfont
+} {}
+
 
 % command for making new links
 % @param name of website, url
